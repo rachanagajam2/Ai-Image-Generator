@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Text to Image Generator</title>
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="header">
+            <div class="logo">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+
+            <h1>Ai Image Generator</h1>
+
+            <button class="theme-toggle">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </div>
+
+        <div class="input">
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="promptinput"
+                    placeholder="Type your image description..."
+                />
+                <button>
+                    <i class="fa-solid fa-dice""></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="gemerate">
+            <button
+                type="submit"
+                class="generate-btn"
+                onclick="generateImage()"
+            >
+                <i class="fa-solid fa-wand-sparkles"></i>
+                Generate
+            </button>
+        </div>
+
+        <div class="output">
+            <div class="result-container" id="result">
+                <!-- <div class="loading-text">Generating Image... Plese wait..!</div> -->
+                <!-- <div class="image-wrapper" id="imageContainer">
+                    <div class="icon-btns">
+                        <button onclick="downloadImage()">
+                            <i class="fa-solid fa-download"></i>
+                        </button>
+                        <button onclick="deleteImage()">
+                            <i class="fa-solid fa-trash-arrow-up"></i>
+                        </button>
+                    </div>
+                    <img
+                        id="generatedImage"
+                        src="https://i.pinimg.com/474x/6b/1c/95/6b1c957ab67da44bde0cb66671b40fbb.jpg?nii=t"
+                        alt=""
+                    />
+                </div> -->
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
